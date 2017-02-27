@@ -1,0 +1,55 @@
+PODS:
+  - Alamofire (4.3.0)
+  - Crashlytics (3.8.4):
+    - Fabric (~> 1.6.3)
+  - Fabric (1.6.11)
+  - Nimble (6.0.1)
+  - Quick (1.1.0)
+  - Realm (2.4.3):
+    - Realm/Headers (= 2.4.3)
+  - Realm/Headers (2.4.3)
+  - RealmSwift (2.4.3):
+    - Realm (= 2.4.3)
+  - Reveal-iOS-SDK (1.6.2)
+  - RxCocoa (3.2.0):
+    - RxSwift (~> 3.1)
+  - RxDataSources (1.0.3):
+    - RxCocoa (~> 3.0)
+    - RxSwift (~> 3.0)
+  - RxSwift (3.2.0)
+  - Unbox (2.4.0)
+  - UnboxedAlamofire (2.0.2):
+    - Alamofire (~> 4.1)
+    - Unbox (~> 2.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.0)
+  - Crashlytics (~> 3.0)
+  - Fabric (~> 1.0)
+  - Nimble (~> 6.0)
+  - Quick (~> 1.0)
+  - RealmSwift (~> 2.0)
+  - Reveal-iOS-SDK (~> 1.0)
+  - RxCocoa (~> 3.0)
+  - RxDataSources (~> 1.0)
+  - RxSwift (~> 3.0)
+  - UnboxedAlamofire (~> 2.0)
+
+SPEC CHECKSUMS:
+  Alamofire: 856a113053a7bc9cbe5d6367a555d773fc5cfef7
+  Crashlytics: 79e236942ca1e7fc641df1feb9a275360a78ab6a
+  Fabric: 5911403591946b8228ab1c51d98f1d7137e863c6
+  Nimble: 1527fd1bd2b4cf0636251a36bc8ab37e81da8347
+  Quick: dafc587e21eed9f4cab3249b9f9015b0b7a7f71d
+  Realm: e08d60b0048ccccd3949c8c28a92c4db5712d7e9
+  RealmSwift: 30d49739ccb3385d201242736ca4dda56aec9dfc
+  Reveal-iOS-SDK: e2250b3c155bcfac53ae223ddc1f76d08f206c33
+  RxCocoa: ccdf43101a70407097a29082f648ba1676075b30
+  RxDataSources: a021a0e944ba5f7991259829d973afdbfa719c0b
+  RxSwift: 46574f70d416b7923c237195939cc488a7fbf3a0
+  Unbox: c8b2ab69d3337597b4a3f47a0538807dc12db670
+  UnboxedAlamofire: ea5562b87b3226588cad53679ab972db82684538
+
+PODFILE CHECKSUM: 5ba08213e98bb17bcdf835819915e18d104a3fb5
+
+COCOAPODS: 1.2.0
