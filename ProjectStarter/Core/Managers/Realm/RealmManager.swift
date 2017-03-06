@@ -81,13 +81,13 @@ extension RealmManagerProtocol {
 
         switch type {
 
-        case TableViewDetail.className():
+        case CatItem.className():
 
-            return TableViewDetail.getMigrationBlock(schemaVersion: schemaVersion, oldSchemaVersion: oldSchemaVersion)
+            return CatItem.getMigrationBlock(schemaVersion: schemaVersion, oldSchemaVersion: oldSchemaVersion)
 
-        case TableViewItem.className():
+        case Source.className():
 
-            return TableViewItem.getMigrationBlock(schemaVersion: schemaVersion, oldSchemaVersion: oldSchemaVersion)
+            return Source.getMigrationBlock(schemaVersion: schemaVersion, oldSchemaVersion: oldSchemaVersion)
 
             
         default:

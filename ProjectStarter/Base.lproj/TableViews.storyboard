@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--tableviews_navigation_item_title-->
+        <scene sceneID="uTv-Pb-95L">
+            <objects>
+                <viewController id="PbW-gL-BZi" customClass="TVViewController" customModule="ProjectStarter" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7h1-Lj-9kp"/>
+                        <viewControllerLayoutGuide type="bottom" id="8wH-qY-09w"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vd7-cc-67e">
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="XWB-q7-uzs">
+                                <rect key="frame" x="93.5" y="286.5" width="187" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RwA-lP-woR">
+                                        <rect key="frame" x="0.0" y="0.0" width="187" height="30"/>
+                                        <state key="normal" title="tableviews_simpletv_button"/>
+                                        <connections>
+                                            <action selector="simpleTVButtonClicked:" destination="PbW-gL-BZi" eventType="touchUpInside" id="X1y-ja-5UJ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="XWB-q7-uzs" firstAttribute="centerY" secondItem="vd7-cc-67e" secondAttribute="centerY" id="BMo-Bm-mqv"/>
+                            <constraint firstItem="XWB-q7-uzs" firstAttribute="centerX" secondItem="vd7-cc-67e" secondAttribute="centerX" id="gtU-ec-EV6"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="TableView" id="lDW-Bx-oyU"/>
+                    <navigationItem key="navigationItem" title="tableviews_navigation_item_title" id="2zA-eT-oAy"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aIP-c4-Ani" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="636" y="142.57871064467767"/>
+        </scene>
+        <!--tableview_tabbar_item_title-->
+        <scene sceneID="giT-k3-KM7">
+            <objects>
+                <navigationController storyboardIdentifier="TableViewsStoryboard" useStoryboardIdentifierAsRestorationIdentifier="YES" id="WfQ-JX-HD0" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="tableview_tabbar_item_title" id="oKm-XO-mYi"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="jy1-WD-rwa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translucent="NO" id="KQQ-H2-emc">
+                        <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="PbW-gL-BZi" kind="relationship" relationship="rootViewController" id="5gp-Ww-zlg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="E9Z-3h-Aqp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-316" y="143"/>
+        </scene>
+    </scenes>
+</document>

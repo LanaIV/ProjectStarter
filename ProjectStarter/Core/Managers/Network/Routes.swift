@@ -10,14 +10,14 @@ import Alamofire
 
 enum Router: URLRequestConvertible {
 
-    case getTableViewData()
+    case getData()
     
     static var baseURLString = Constants.ApiPaths().apiUrl
 
     var method: HTTPMethod {
 
         switch self {
-        case .getTableViewData:
+        case .getData:
             return .get
         }
     }
@@ -25,8 +25,8 @@ enum Router: URLRequestConvertible {
     var path: String {
 
         switch self {
-        case .getTableViewData:
-            return Constants.ApiPaths.TableView.get().simpleTableViewData
+        case .getData:
+            return Constants.ApiPaths.items.get().data
         }
     }
 

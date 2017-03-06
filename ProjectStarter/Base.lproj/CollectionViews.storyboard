@@ -67,7 +67,7 @@
         <!--tabbar_collectionview-->
         <scene sceneID="Hsj-6F-mRg">
             <objects>
-                <navigationController storyboardIdentifier="CollectionViewStoryboard" useStoryboardIdentifierAsRestorationIdentifier="YES" id="JYN-H2-2z3" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="CollectionViewsStoryboard" useStoryboardIdentifierAsRestorationIdentifier="YES" id="JYN-H2-2z3" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="tabbar_collectionview" id="I3Y-aW-IZC"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="nUl-8q-zsW">

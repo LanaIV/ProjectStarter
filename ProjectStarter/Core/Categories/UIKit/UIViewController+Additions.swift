@@ -17,17 +17,13 @@ public extension UIViewController {
 
     public func displayFullScreen(viewController: UIViewController?, inContainerView: UIView?) {
 
-        guard let contentViewController = viewController, let containerView = inContainerView, let contentView = contentViewController.view else {
+        guard let contentViewController = viewController, let containerView = inContainerView else {
             return
         }
 
         self.addChildViewController(contentViewController)
 
-        containerView.addSubview(contentView)
-
-        contentView.translatesAutoresizingMaskIntoConstraints = false;
-
-        containerView.addFullScreenFillingContraints(toContentView: contentView)
+        containerView.displayFullScreen(view: contentViewController.view)
 
         contentViewController.didMove(toParentViewController:self)
     }

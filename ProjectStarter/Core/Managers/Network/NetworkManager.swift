@@ -17,6 +17,7 @@ enum NetworkError: Error {
 
     case http
     case api
+    case jsonParse
     case undefined
 }
 
@@ -26,15 +27,13 @@ class NetworkManager {
 
     let disposeBag = DisposeBag()
 
-    func execute(request: URLRequestConvertible) -> Observable<Any> {
+    func execute(urlRequest: URLRequestConvertible) -> Observable<Any> {
 
         return Observable.create { observer in
 
             let request = Alamofire
-                .request(request)
+                .request(urlRequest)
                 .responseJSON { response in
-
-                    print(response)
 
                     if let error = response.error {
                         self.handleError(observer: observer, error: error)
@@ -54,13 +53,14 @@ class NetworkManager {
 
     private func handleResult(observer: AnyObserver<Any>, result: Any?) {
 
-        guard let data = result as? ResponseDictionary else {
-            handleError(observer: observer)
+        guard let dictionaryData = result as? ResponseDictionary else {
+
+            handleError(observer: observer, error: NetworkError.jsonParse)
 
             return
         }
 
-        observer.on(.next(data))
+        observer.on(.next(dictionaryData))
     }
     
     func handleError(observer: AnyObserver<Any>, error: Error = NetworkError.undefined) {

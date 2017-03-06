@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SimpleTVViewController">
+            <connections>
+                <outlet property="tableViewContainer" destination="9Eq-zn-AYT" id="pck-on-SUQ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="aHB-DD-deb"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="UNj-Fq-yac">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Eq-zn-AYT">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="UNj-Fq-yac" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="UF5-dc-L5X"/>
+                <constraint firstAttribute="bottom" secondItem="UNj-Fq-yac" secondAttribute="bottom" id="fpM-D9-Vgb"/>
+                <constraint firstItem="UNj-Fq-yac" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="n35-Mh-xqs"/>
+                <constraint firstAttribute="trailing" secondItem="UNj-Fq-yac" secondAttribute="trailing" id="ycB-yF-MVE"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

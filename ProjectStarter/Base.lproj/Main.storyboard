@@ -9,11 +9,11 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--tabbar_more-->
+        <!--more_tabbar_item_title-->
         <scene sceneID="Foy-AA-5d2">
             <objects>
                 <navigationController id="dmY-J3-j8B" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="tabbar_more" id="nYP-YF-cuy"/>
+                    <tabBarItem key="tabBarItem" title="more_tabbar_item_title" id="nYP-YF-cuy"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="swm-Rc-t3g">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -30,27 +30,27 @@
             </objects>
             <point key="canvasLocation" x="-375" y="571"/>
         </scene>
-        <!--TableViewStoryboard-->
+        <!--TableViewsStoryboard-->
         <scene sceneID="Fy2-Ai-gJa">
             <objects>
-                <viewControllerPlaceholder storyboardName="TableView" referencedIdentifier="TableViewStoryboard" id="Suf-8E-CKt" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="TableViews" referencedIdentifier="TableViewsStoryboard" id="Suf-8E-CKt" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="TableView" id="1WF-sm-4Da"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cZ9-Nm-133" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="363" y="-372"/>
         </scene>
-        <!--CollectionViewStoryboard-->
+        <!--CollectionViewsStoryboard-->
         <scene sceneID="aWt-IJ-nDj">
             <objects>
-                <viewControllerPlaceholder storyboardName="CollectionView" referencedIdentifier="CollectionViewStoryboard" id="OQV-02-9so" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="CollectionViews" referencedIdentifier="CollectionViewsStoryboard" id="OQV-02-9so" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="CollectionView" id="BER-rf-yA6"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AOe-PB-ViS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="386" y="-258"/>
         </scene>
-        <!--more_navigation_title-->
+        <!--more_navigation_item_title-->
         <scene sceneID="jiM-C3-aid">
             <objects>
                 <viewController id="icZ-gk-xQb" sceneMemberID="viewController">
@@ -77,8 +77,8 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rxn-DJ-Ktq">
                                         <rect key="frame" x="0.0" y="513.5" width="375" height="40.5"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="more_label_version" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hjW-Fa-2Dd">
-                                                <rect key="frame" x="10" y="10" width="143.5" height="20.5"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="more_version_label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hjW-Fa-2Dd">
+                                                <rect key="frame" x="10" y="10" width="143.5" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -111,7 +111,7 @@
                             <constraint firstItem="FX9-BL-AoH" firstAttribute="top" secondItem="uKL-5L-0ja" secondAttribute="bottom" id="kZj-V9-lUv"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="more_navigation_title" id="dgT-0A-KKN"/>
+                    <navigationItem key="navigationItem" title="more_navigation_item_title" id="dgT-0A-KKN"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wb7-gK-kap" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

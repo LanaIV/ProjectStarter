@@ -24,13 +24,11 @@ struct Constants {
             }
         }
 
-        struct TableView {
-
-            let tableView = "tableView"
+        struct items {
 
             struct get {
 
-                let simpleTableViewData = "simpleTableView"
+                let data = "items/"
             }
         }
     }
@@ -40,6 +38,8 @@ struct Constants {
     }
 
     struct Defaults {
+
+        let cellHeight = 44.0
 
         let emptyString = ""
     }
